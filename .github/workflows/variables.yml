@@ -31,7 +31,7 @@ jobs:
           if: ${{ failure() }}
           env:
              FORMAT_VAR: ${{ format('Github {0} {1} {2}  ', 'actins','is','awesome!') }}
-             run: |
+          run: |
                echo "this step runs a special step to clean up after the failed step"
                echo ${{ env.FORMAT_VAR }}
         - name: function and always ststus check
